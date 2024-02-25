@@ -17,7 +17,7 @@ const App = () => {
       stock: 94,
       brand: "Apple",
       category: "smartphones",
-      thumbnail: "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
+      thumbnail: "./img/iphone9.png",
       images: [
         "https://i.dummyjson.com/data/products/1/1.jpg",
         "https://i.dummyjson.com/data/products/1/2.jpg",
@@ -37,7 +37,7 @@ const App = () => {
       stock: 34,
       brand: "Apple",
       category: "smartphones",
-      thumbnail: "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+      thumbnail: "./img/iphoneX.png",
       images: [
         "https://i.dummyjson.com/data/products/2/1.jpg",
         "https://i.dummyjson.com/data/products/2/2.jpg",
@@ -56,7 +56,7 @@ const App = () => {
       stock: 36,
       brand: "Samsung",
       category: "smartphones",
-      thumbnail: "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+      thumbnail: "./img/universe.png",
       images: ["https://i.dummyjson.com/data/products/3/1.jpg"],
     },
     {
@@ -69,7 +69,7 @@ const App = () => {
       stock: 123,
       brand: "OPPO",
       category: "smartphones",
-      thumbnail: "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+      thumbnail: "./img/F19.png",
       images: [
         "https://i.dummyjson.com/data/products/4/1.jpg",
         "https://i.dummyjson.com/data/products/4/2.jpg",
@@ -89,7 +89,7 @@ const App = () => {
       stock: 32,
       brand: "Huawei",
       category: "smartphones",
-      thumbnail: "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
+      thumbnail: "./img/p30.png",
       images: [
         "https://i.dummyjson.com/data/products/5/1.jpg",
         "https://i.dummyjson.com/data/products/5/2.jpg",
@@ -110,7 +110,9 @@ const App = () => {
       }}
     >
       <div>
-         <myContext.Provider value={[data, setData]}>   {/* use context provider */}
+        <myContext.Provider value={[data, setData]}>
+          {" "}
+          {/* use context provider */}
           <Cart />
         </myContext.Provider>
       </div>
